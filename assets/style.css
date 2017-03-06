@@ -97,7 +97,8 @@ footer .social-contact-icons {
 footer .social-contact-icons .instagram,
 footer .social-contact-icons .linked-in,
 footer .social-contact-icons .pinterest,
-footer .social-contact-icons .facebook {
+footer .social-contact-icons .facebook,
+footer .social-contact-icons .github {
   float: left;
   display: inline-block;
   padding: 1em;
