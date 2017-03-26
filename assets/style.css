@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Oswald:400,700');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn|Unica+One:400,700');
 body {
   margin: 0px;
 }
@@ -48,43 +48,34 @@ body .page-content-about {
   overflow: auto;
 }
 body .page-header-text {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Unica One', sans-serif;
   text-transform: uppercase;
+  color: #323339;
   font-weight: 700;
   font-size: 2.5em;
-  text-align: left;
 }
 body .page-text {
-  font-family: 'Merriweather', serif;
+  font-family: 'Vollkorn', sans-serif;
   font-size: 0.9em;
-}
-body .inverted-coloring {
-  padding: 4rem 0rem;
-  background: #000;
-}
-body .inverted-coloring .page-header-text {
-  color: #FFF;
-}
-body .inverted-coloring .page-text {
-  color: #FFF;
+  color: #323339;
 }
 body .center {
   text-align: center;
 }
 body a {
   text-decoration: none;
-  color: #84BD00;
+  color: #F26968;
   cursor: pointer;
 }
 body a:hover {
-  color: #99326D;
+  color: #6CBF84;
 }
-body a svg path:hover {
-  fill: #84BD00;
+body a svg:hover path {
+  fill: #F26968;
   transition: fill 0.5s ease-out;
 }
 footer {
-  background: #000;
+  background: #323339;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -112,11 +103,11 @@ footer .social-contact-icons .github {
   z-index: 1000;
 }
 .navigation a {
-  color: #000;
+  color: #323339;
   text-decoration: none;
 }
 .navigation a:hover {
-  color: #84BD00;
+  color: #F26968;
   text-decoration: none;
   transition: color 0.5s ease-out;
 }
@@ -147,7 +138,7 @@ nav {
   font-size: .8em;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Unica One', sans-serif;
 }
 nav ul {
   list-style: none;
@@ -224,7 +215,7 @@ nav ul li ul li a:hover {
   border-radius: 1px;
   height: .4em;
   width: 3.5em;
-  background: #000;
+  background: #323339;
   position: absolute;
   display: block;
   content: '';
@@ -306,6 +297,9 @@ nav ul li ul li a:hover {
   .nav-dropdown {
     position: static;
     width: 100%;
+  }
+  .page-header-text {
+    text-align: center;
   }
 }
 @media screen and (min-width: 751px) {

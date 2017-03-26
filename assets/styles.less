@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Oswald:400,700');
-@pantone-greenery: #84BD00;
+@import url('https://fonts.googleapis.com/css?family=Vollkorn|Unica+One:400,700');
+@accent-one: #F26968;
+@accent-two: #6CBF84;
+@accent-three: #323339;
+//unica one, rubik
+
 
 body {
   margin: 0px;
@@ -59,29 +63,17 @@ body {
   }
 
   .page-header-text {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Unica One', sans-serif;
     text-transform: uppercase;
+    color: @accent-three;
     font-weight: 700;
     font-size: 2.5em;
-    text-align: left;
   }
 
   .page-text {
-    font-family: 'Merriweather', serif;
+    font-family: 'Vollkorn', sans-serif;
     font-size: 0.9em;
-  }
-
-  .inverted-coloring {
-    padding: 4rem 0rem;
-    background: #000;
-    
-    .page-header-text {
-      color: #FFF;
-    }
-
-    .page-text {
-      color: #FFF;
-    }
+    color: @accent-three;
   }
 
   .center {
@@ -90,17 +82,17 @@ body {
 
   a {
     text-decoration: none;
-    color: @pantone-greenery;
+    color: @accent-one;
     cursor: pointer;
 
     &:hover {
-      color: #99326D;
+      color: @accent-two;
     }
 
     svg {
+    &:hover {
       path {
-        &:hover {
-          fill: @pantone-greenery;
+          fill: @accent-one;
           transition: fill .5s ease-out;
         }
       }
@@ -109,7 +101,7 @@ body {
 }
 
 footer {
-  background: #000;
+  background: @accent-three;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -139,11 +131,11 @@ footer {
   z-index: 1000;
 
   a {
-    color: #000;
+    color: @accent-three;
     text-decoration: none;
 
     &:hover {
-      color: @pantone-greenery;
+      color: @accent-one;
       text-decoration: none;
       transition: color .5s ease-out;
     }
@@ -180,7 +172,7 @@ nav {
   font-size: .8em;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Unica One', sans-serif;
 
   ul {
     list-style: none;
@@ -269,7 +261,7 @@ nav {
     border-radius: 1px;
     height: .4em;
     width: 3.5em;
-    background: #000;
+    background: @accent-three;
     position: absolute;
     display: block;
     content: '';
@@ -377,6 +369,10 @@ nav {
   .nav-dropdown {
     position: static;
     width: 100%;
+  }
+
+  .page-header-text {
+    text-align: center;
   }
 }
 
